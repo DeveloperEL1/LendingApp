@@ -1,23 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-
+import TopBar from './components/TopBar'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar />
+      <div className='flex  flex-col justify-center items-center h-screen'>
+        <h2 className='text-bold text-5xl text-center	'>This is a place where you can sign in, gather our own money know as scash coin and buy assets on our website. More comming up soon</h2>
+      </div>
     </div>
   );
 }
